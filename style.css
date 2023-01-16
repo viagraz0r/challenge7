@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+	/* Colors*/
+	/* ##Primary */
+
+	--BrightOrange: hsl(31, 77%, 52%);
+	--DarkCyan: hsl(184, 100%, 22%);
+	--VeryDarkCyan: hsl(179, 100%, 13%);
+
+	/* ### Neutral */
+
+	--TransparentWhiteParagraphs: hsla(0, 0%, 100%, 0.75);
+	--VeryLightGray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+
+	--FontHeadings: 'Big Shoulders Display', cursive;
+	--FontParagraphs: 'Lexend Deca', sans-serif;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 15px;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+	overflow-x: hidden;
+	padding: 85px 25px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.card {
+	height: 442px;
+	width: auto;
+	padding: 48px;
+}
+
+.card h2 {
+	color: var(--VeryLightGray);
+	font-family: var(--FontHeadings);
+	font-size: 38px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.card p {
+	color: var(--TransparentWhiteParagraphs);
+	font-family: var(--FontParagraphs);
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+.card1 {
+	background-color: var(--BrightOrange);
+}
+.card2 {
+	background-color: var(--DarkCyan);
+}
+.card3 {
+	background-color: var(--VeryDarkCyan);
+}
+
+.card button {
+	font-family: var(--FontParagraphs);
+	font-size: 15px;
+	background-color: var(--VeryLightGray);
+	padding: 15px 30px;
+	border-radius: 50px;
+	border: none;
+	margin-top: 10px;
+}
+
+.card1 button {
+	color: var(--BrightOrange);
+}
+.card1 button:hover {
+	color: var(--VeryLightGray);
+	background-color: var(--BrightOrange);
+	border: 2px solid var(--VeryLightGray);
+}
+.card2 button {
+	color: var(--DarkCyan);
+}
+.card2 button:hover {
+	color: var(--VeryLightGray);
+	background-color: var(--DarkCyan);
+	border: 2px solid var(--VeryLightGray);
+}
+.card3 button {
+	color: var(--VeryDarkCyan);
+}
+.card3 button:hover {
+	color: var(--VeryLightGray);
+	background-color: var(--VeryDarkCyan);
+	border: 2px solid var(--VeryLightGray);
+}
+
+.attribution {
+	font-family: var(--FontParagraphs);
+	font-size: 11px;
+	padding: 20px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 992px) {
+	.container {
+		width: 920px;
+		display: flex;
+	}
+
+	.card {
+		height: auto;
+	}
+
+	.card button {
+		margin-top: 70px;
+	}
+
+	.attribution {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1382px) {
+	body {
+		padding: 170px 260px;
+	}
+}
